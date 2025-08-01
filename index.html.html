@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bốc thăm trúng iPhone 16 Pro Max</title>
+  <style>
+    body {
+      background: radial-gradient(circle, #000, #111);
+      color: white;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+      padding: 50px;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00; }
+      to   { text-shadow: 0 0 20px #ffff00, 0 0 30px #ffff00; }
+    }
+
+    #btn {
+      background-color: #ffcc00;
+      color: #000;
+      font-size: 1.5em;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    #btn:hover {
+      transform: scale(1.1);
+    }
+
+    #result {
+      margin-top: 30px;
+      display: none;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .iphone-img {
+      max-width: 300px;
+      margin-top: 20px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: gold;
+      top: 0;
+      animation: fall 3s linear infinite;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-100px) rotate(0); opacity: 1;}
+      100% { transform: translateY(100vh) rotate(360deg); opacity: 0;}
+    }
+
+    .transfer-info {
+      margin-top: 25px;
+      font-size: 1.5em;
+      color: #ff5050;
+      font-weight: bold;
+      text-shadow: 0 0 10px #ff0000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bốc thăm trúng thưởng</h1>
+  <button id="btn">BỐC THĂM NGAY!</button>
+
+  <div id="result">
+    <h2 style="font-size: 2.5em; color: #00ff00; text-shadow: 0 0 20px #00ff00;">🎉🎉 CHÚC MỪNG!!! 🎉🎉</h2>
+    <p style="font-size: 2em;">Bạn đã trúng <strong>iPhone 16 Pro Max</strong> trị giá 40 triệu VNĐ!!!</p>
+    
+    <!-- Ảnh iPhone 16 Pro Max base64 -->
+    <img 
+      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQBDgMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABAYBBQMHCAL/xABLEAACAQMBBAYFBQsJCQAAAAAAAQIDBBEFBhIhMQcTQVFhsSJxc4GRFDI3ksEVFiMlQ1V0k6Gy0RcmREVSU1RjcjQ1QmJkgqPh8P/EABgBAQEBAQEAAAAAAAAAAAAAAAADAgEE/8QAIBEBAAICAwADAQEAAAAAAAAAAAECETEDEiETQVFxBP/aAAwDAQACEQMRAD8A7qAB0AAAAAAAAAAABjPDL5YIk9RoReIRq1PGnDK+JyZwJgIT1KmvyNx9QLUqb/I3H6s52h3rKaCFLUqcedC5/VmPupRXOjc/qzvaDrKcCu3O2+z9rWlRuL3cqReHDdba+BGfSJsuv6x/8cv4DMGJWsFS/lI2U/OcfqS/gfL6TNkVz1an9VjJhbwU/wDlO2Pzj7s0vgzD6T9j1j8c0vgzphcQabRtqtD1yW5pepW9efZCMuL9xuQ4AAAAAAAAAAAAAAAAAAAAAAAAAACBf1G7mhapLdmpSn6lj7Wdbbf9KE9B1aek6PZ069xRS66pVbUYtpNJJc3hrwWTsTUHu6pbtf3E/OJ0x0hbE6lLaK41TTVCrTucTlGU1GUZYxzfNYS9+ezDc/Jn1v68XfYPbintVbVoXFD5Pe0Gt+mptxaecNP3P1fAtTmpPHDCWXvN/sOrejjQLjSbitVuZx6+rjrFB5jSgsvDfJt8OXLBA13pX1CGpVYaTZW3yGhU6tTrxlKVR9/Brdzh44M5jM+NZxt3PbTT9FZa7Mvlw/8ATK70iX9fT9n5RspuncXVWFCM484bzScl4pPJ9bEbR0to7C3vIQ6qU/RlTznckspo1XTE60dBs5WsnGsryG68ZM/bSp2ttRpQVGjHCknHLfFtrm32vPaaG6i1OSOBanrtvJSbpVXFp4nS/hgn6tKgq63akYdbFTjFy4pPijrsqrrFO8qSj8lk1BLiovDNTKjf59Kc/rlquI548/E11eOew3EpzVqqMaqptVX6s8zElzRKnE4JROjFrc17K4p3VpVlSuKUt6nOL4pnq7ZDVXrezWn6lL59xRUpeL7Tyc0enOij6PdG9j9rOwzK2gA6yAAAAAAAAAAAAAAAAAAAAAAAA1Wp/wC8KHsZ+cTqrpD6RLrT9ar6Po9tRbtkuurVY729JpPEV3JNcX25O1tQhKpqFFQ5qhNr60Tpzb/Ymvca9U1SwrUYyqtSqUq+UlKKxlSSfYlz7ufYS87eq+48bnYPa57QWlzbXlvCjdUUt7q+EZxlyfenlNP1rHhSNW2E1K11erKwdvUt5zlKMq1VQcM8eKfPHhnkWrYXZ24sKtWom69arJOvWpwkqcUuUI5Sb45beOxe+dtbs1tLqe0OnXOkXHV2dJR6yG+47rUvSbjj0srCO5xPjmP1s+jTR/uVQp0ISc4wblKputKc2220n2di9RK6UUpadp0cf06BZ9Ls3Qi5tLLeeHqx9ufcVrpO/wBk0yWeHy2Jj7ahSZWcX2Gp1jQKV441t1OUYqD9Sba82WFNH1BxUk8byfBrvRpqJdc3Fjd2PGhNyh/YlyZxU68a6cWtyoucGX/U9OTzKKThLjGS7UU/VNMlGTqU01JcmciXbVaupDD5EeUGToZqwaksTjwkjinSaKJzCDKDyel+ij6PtF9h9p5xlTZ6O6KPo+0b2P2s7DEraADrIAAAAAAAAAAAAAAAAAAAAAAADXVnnWqUXyVvL95Eqpb0a/CtShP/AFJMiVn+O6X6M/3kTovgQttWNONWVquCowS8EPkluuVGHwOXIycHxJJLCSS7kig9K0t3T9O/TIF8mzr7peqbuj2X6XBiNu/SpU7g541TQUrnkSYXJXDmW+oXMFmlWX4KTz4xfeR9S07Md6OJQlxUo8mvWa9XJJtdUnbZjhTov50H9ncTtX8VpfzEqtqFm7W5VZR9HlJeBw1bfHDhwfMudzSs9UpP5PNOpjjSfCS/j7jR1LGVOEcx4LMfg/4YM/JjanxZjMK/KgegOih/zC0pd1PH7TpWdq+47r6K+Gw+nLui1+0rWcvPyVmq2gAoiAAAAAAAAAAAAAAAAAAAAAAAA1t3hatQ4fkZ8f8AuRJjIi37/Gtt7CfnE5FIhba0aSN4w5nDvka7qyjGKTaznkZy6k1Ki3t3DfDidedMcsaBaS7ruHmi2yrNy4yeG+8pnTNL+bFu084uoeaOxsnTrKnXx2kiFx4mnjV8TkjW8S6bcq58TLufE1CrvvM9e+8GU6rVzlp8fA+7LaPUbe4pUalWNzRlNR3biO80n3S+d8WzWSrPvIlSp6cZJ8VJNGLREx6px2mJ8XCW0WnSlONzps4NNrNKonn44O4OjGUJ7EabOmmoyjJpPnjeZ5v1Ctu3tdLsmei+ibj0faO/8p+bFIw5yXm21uABREAAAAAAAAAAAAAAAAAAAAAAABqdSeNTtvYz84mVI+NWeNStvYz84nwpHnvtaunM5HFXj1kMcn2GHI+XM40ju2nz3o+JR+mX0dlqKXJXMPNF9cigdMrzsvT/AEmHmjtduW06eUz6VUjbxneLo5SusfeOtfeRd5hT4ASXVPmj+EuKUHylNJ/ExbWtzeZ+T0pTS5tcl7+RsLLTKtvVd1OvbTVBb8oQlvP1csGLzEQrxUtafGquHUuL+u6UJ1H1jzuRcu3wPS/ROmuj7R01hqk8/FnQEr+7mkuucfCGI+R6A6KXnYDSG+LdNt/FilsnJSKx5K2gAoiAAAAAAAAAAAAAAAAAAAAAAAA0mtvd1G19lPziR9/gcm0DxqFo++lPziQ+sIW2tXSQ5mN8j75jfMtOZzKH0wyzsvD9Ih5oujmUXpblnZmK/wA+HmjtduW06eGQGXSwz2cSfG2pWe679b9fGVa8t3uc32P/AJeffjkfVtBWFvTuppO5qLeoRf5OP9t+L7PiQJSbbbeW329pnfjcR1/qZXvKtwlGcsU1ypxWIr3EpydCxhSljfrYnJd0F81e9pv3IjabbRqb1zXyrelz7HJ9kV4sxcV5Vq0qksZb7OS7El7kSviZ8emmYrmX3vdp6L6KPo+0f2T82ebd89I9E/0faP7J+bN8aPNOVuABV5wAAAAAAAAAAAAAAAAAAAAAAAFd2nlu31nj+6n5xNZ1nAm7XyxeWX+ip5o03W8CFtrV0l9YYdQiuqY6wy0kSq+JS+lSW9s3Ff8AUQ8y0yqFS6SX1mz8Yri3cU/3kdjeTfjqhLgTNKtqdzdfh+FvRj1lV98V2ethWVWXKDLFpGgXdTRriUYqn10lvVJtRSiuxt+rItz1jcqU/wA9pnOFbvK87u4nWqLEpvkuUe5epLgSLHTOsg7i6n1NtD51R+S72T633I07K6xahcL/AIKbapr1y7fcam9vq97UU68otQ4QhFYjTXdFdhztNtRiHelazmZzLlvruNaShRi6dvT4U6b833tkNyPjePls1EYYteZ25N7xPTHRN9HujexfmzzDnienuib6PdG9i/NlKwlyStwANpAAAAAAAAAAAAAAAAAAAAAAPUABU9t/RuLCa+bicfJ/YV7fL1r2krVrLqVU6urCW/Sn3Px8GUavpupW9WVOraVJSXbT9KL9TX/3qJWj1Ws+Pl1DHWGPkd//AIK4+ozHyK//AMFcfq2YxLWYHUK5tvdVLXRXd0oU6kqFWE9yrHei/SS4r3lidjfv+hXH6tkTUdEu9Qs6trXsLh06sd1+gzuHMutNM2q1jUtXsbOi7W0hXrwpz6i1hlRckm8yTaws8mRdo9Qr6jqNepWrVZxcnuRlNtRXcl2G+03YTXtG1uleRsK9zQpb+N2OJZcWo8+5tMh19iNpas3KOkV1l+BmeKsWiawtTlnpPafVWbMNlj+8Laj80VTD2B2pf9U1SmEptCtuR8tlk+8Dan801R94G1S5aVUO4Z7Ky3jn3HqXorpSo7AaNCompdRnD7MvJ09sp0Sa3ql7CWrxjZWUZJ1MvM5ruSPQ1nbUrO0o21vHdpUoKEF4I1EMWlzAA0yAAAAAAAAAAAAAAAAAAAAAAAAGFJ72OwAD695n3gAPePeAB85ecZGWZAGMvvGX3mQBjL7zKy3zYAGJLjzyAAAAAAAAAAAAAAAD/9k=" 
+      alt="iPhone 16 Pro Max" 
+      class="iphone-img">
+
+    <!-- Dòng chữ chuyển khoản -->
+    <p class="transfer-info">
+      Để nhận phần quà, vui lòng chuyển khoản <strong>500.000đ phí ship COD</strong><br>
+      tới STK: <strong>0386019936 - Ví momo</strong>
+    </p>
+  </div>
+
+  <script>
+    const btn = document.getElementById('btn');
+    const result = document.getElementById('result');
+
+    btn.addEventListener('click', () => {
+      btn.style.display = 'none';
+      result.style.display = 'block';
+      showConfetti();
+    });
+
+    function showConfetti() {
+      for (let i = 0; i < 100; i++) {
+        let confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = Math.random() * 100 + 'vw';
+        confetti.style.background = getRandomColor();
+        confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+        document.body.appendChild(confetti);
+        setTimeout(() => confetti.remove(), 4000);
+      }
+    }
+
+    function getRandomColor() {
+      const colors = ['#ff0', '#f0f', '#0ff', '#f90', '#0f0', '#f00'];
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+  </script>
+</body>
+</html>
